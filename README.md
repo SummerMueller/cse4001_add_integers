@@ -128,6 +128,19 @@ Building done.
   
 Now, run sys161 kernel from inside ~/os161/root/
 ```
+### Testing the system call
+
+To test the system call, just run the following command: 
+```bash
+sys161 kernel p testbin/test_sum_integers
+```
+The expected output (considering the hardcoded input values given in these instructions) is:
+```bash
+s1=10
+s1=-1
+```
+
+
 
 ### Submitting the assignment
 
