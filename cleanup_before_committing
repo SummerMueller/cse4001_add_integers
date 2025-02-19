@@ -1,0 +1,5 @@
+bmake clean
+cd kern/compile/ASST3
+bmake clean
+cd ../../
+
