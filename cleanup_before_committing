@@ -1,5 +1,5 @@
 bmake clean
-cd kern/compile/ASST3
+cd kern/compile/ASST4
 bmake clean
 cd ../../
 
