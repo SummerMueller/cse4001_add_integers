@@ -10,19 +10,7 @@ cd /root/os161/root
 # Open the file for writing and direct future output to this file
 log_file -noappend output.txt
     
-spawn sys161 kernel p testbin/hello
-
-
-# Wait for the OS/161 kernel command prompt
-#expect "OS/161 kernel \[? for menu\]: "
-
-# Run the hello program
-#send "p testbin/hello\r\r"
-
-# Wait for the OS/161 kernel command prompt
-# expect "OS/161 kernel \[? for menu\]: "
-# expect "Hello CSE4001!"
-
+spawn sys161 kernel p testbin/test_add_integers
 
 # Send [ENTER]
 send -- "\r"
@@ -35,7 +23,7 @@ send -- "q\r"
 # This might be the program's specific output or a return to the command prompt
 # Adjust the following line according to your program's output or OS/161's behavior
 expect {
-    "Hello CSE4001" {
+    "s2=-1" {
 
         # Handle successful completion if needed
         puts "\n\nCorrect output.\n\n"
@@ -45,16 +33,6 @@ expect {
         
         exit 0
     }
-    # Open the file for writing and direct future output to this file
-    # log_file -noappend output.txt
-    # "OS/161 kernel \[? for menu\]: " {
-    #     # Assume the program has completed and returned to the prompt
-    #     puts "\n\nCorrect output.\n\n"
-    #     exit 0    
-    # }
-    # Close the log file
-    # log_file
-
     timeout {
         # Handle timeout if the program does not complete in expected time
         puts "Program execution timed out"
