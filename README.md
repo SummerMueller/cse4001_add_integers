@@ -137,7 +137,7 @@ sys161 kernel p testbin/test_sum_integers
 The expected output (considering the hardcoded input values given in these instructions) is:
 ```bash
 s1=10
-s1=-1
+s2=-1
 ```
 
 
