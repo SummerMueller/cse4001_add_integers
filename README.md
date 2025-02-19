@@ -1,4 +1,4 @@
-# CSE4001 - Assignment: Add two more system calls to OS/161 💥 
+# CSE4001 - Assignment 4: Add two more system calls to OS/161 💥 
 
 This repository contains the code base of the OS/161 kernel that you will use to complete this assignment. In this assignment, you will implement the following:
 
