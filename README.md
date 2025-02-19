@@ -52,7 +52,7 @@ void sys_print_int(const char str[], int x) {
 
 
 
-The code to be implemented in the test program is given as follows:
+The executable file of the test program must be named `test_sum_integers`. The code to be implemented in the test program is given as follows:
 
 #### Test program:  
 
