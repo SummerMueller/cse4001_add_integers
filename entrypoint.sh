@@ -20,14 +20,14 @@ export HOME="/root"
 
 
 echo "Building OS/161"
-# Build OS/161 for assignment ASST3
-./build_os161 3
+# Build OS/161 for assignment ASST4
+./build_os161 4
 
-# Run the OS/161 kernel with the hello program
-./expect_run_hello.exp 
+# Run the OS/161 kernel with the test program
+./expect_run_test.exp 
 
 # Test 
-grep -q "Hello CSE4001" /root/os161/root/output.txt && exit 0 || exit 1
+grep -q "s2=-1" /root/os161/root/output.txt && exit 0 || exit 1
 # grep -q "Operation took" /root/os161/root/output.txt && exit 0 || exit 1
 
 
