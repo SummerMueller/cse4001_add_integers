@@ -109,6 +109,20 @@ syscall(struct trapframe *tf)
 				 (userptr_t)tf->tf_a1);
 		break;
 
+        case SYS_add_three_integers:
+        err = sys_add_three_integers(
+          tf->tf_a0,
+          tf->tf_a1,
+          tf->tf_a2,
+          &retval);
+        break;
+
+        case SYS_print_int:
+        err = sys_print_int(
+          (const char *)tf->tf_a0,
+          tf->tf_a1);
+        break;
+
 		// Quick (and dirty) implementation of sys__exit()
 		case SYS__exit:
 			err = 0;

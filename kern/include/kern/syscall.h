@@ -100,7 +100,8 @@
 //#define SYS_setsid     43
 //                              (userlevel debugging)
 //#define SYS_ptrace     44
-
+#define SYS_add_three_integers 43
+#define SYS_print_int    44
 //                              -- File-handle-related --
 #define SYS_open         45
 #define SYS_pipe         46

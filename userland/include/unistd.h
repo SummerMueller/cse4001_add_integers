@@ -127,6 +127,9 @@ int sync(void);
 /* mkdir - see sys/stat.h */
 int rmdir(const char *dirname);
 
+int add_three_integers(int a, int b, int c);
+int print_int(const char str[], int x);
+
 /* Recommended. */
 pid_t getpid(void);
 int ioctl(int filehandle, int code, void *buf);
