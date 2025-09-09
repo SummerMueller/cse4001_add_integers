@@ -158,3 +158,4 @@ In addition to adding only the necessary files, remove binary files. The script 
 ```
 This script will run `bmake clean` for the kernel directories and also for the `userland` directories.
 
+<img src="Screenshot 2025-09-08 200556.png" alt="Alt text" width="500"/>
